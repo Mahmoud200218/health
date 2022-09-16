@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/health/static/css/main.a7ab2603.css",
+    "main.css": "/health/static/css/main.966fef61.css",
     "main.js": "/health/static/js/main.92471a93.js",
     "static/media/doctor3.jpg": "/health/static/media/doctor3.94c5f18579260cc2f852.jpg",
     "static/media/doctor1.jpg": "/health/static/media/doctor1.1251eff13784cb9b032a.jpg",
@@ -16,11 +16,11 @@
     "static/media/exper3.jpg": "/health/static/media/exper3.fa689b1037dbf69567a3.jpg",
     "static/media/appointment-women.png": "/health/static/media/appointment-women.eb5c49c523f7d6240d33.png",
     "index.html": "/health/index.html",
-    "main.a7ab2603.css.map": "/health/static/css/main.a7ab2603.css.map",
+    "main.966fef61.css.map": "/health/static/css/main.966fef61.css.map",
     "main.92471a93.js.map": "/health/static/js/main.92471a93.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7ab2603.css",
+    "static/css/main.966fef61.css",
     "static/js/main.92471a93.js"
   ]
 }
