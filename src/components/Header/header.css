@@ -1,0 +1,237 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7ff;
+}
+
+.header__content {
+    position: relative;
+    width: 80%;
+    margin:auto;
+}
+
+/* Header Left */
+.header__left {
+    position: absolute;
+    margin-top: 12rem;
+}
+
+.header__left h5{
+    background-image: url(../../assests/background-title.png);
+    width: 65%;
+    height: 30px;
+    text-align: center;
+    color: #5C60D1;
+}
+
+.header__left h1 {
+    color: #1F2278;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.header__left button {
+    margin: 25px 0;
+    font-size: 16px;
+    width: 190px;
+    height: 60px;
+    box-shadow: 0 5px 20px 0 rgba(241,119,50,.3)!important;
+    background-color: var(--orange-color);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .5s;
+    line-height: 1.2;
+
+}
+
+.header__left button:hover {
+    color: #000;
+}
+
+/* Header Right */
+.header__right {
+    position: absolute;
+    right: 0;
+    margin-top: 60px ;
+    
+}
+
+.header__right img {
+    width: 500px;
+    border-style: none;
+    height: auto;
+    vertical-align: middle;
+    margin-right: -80px;
+}
+
+.header__right img{
+  
+    animation: float 6s infinite ease-out;
+
+  }
+
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(1.1rem);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+.square {
+  position: absolute;
+  margin: 10px 40px 0 0;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border: 2px solid var(--btn-color);
+  animation: square 5s infinite ease-out;
+
+}
+
+.square-child {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #E6E7FF;
+
+}
+
+@keyframes square {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(0.5rem);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.circle {
+  position: absolute;
+  margin: -50px 0px 0 150px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #e6e7ff; 
+}
+
+.circle__child {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  left: 20px;
+  top: 15px;
+  background-color: #5C60D1;
+}
+
+.plus__image {
+  position: absolute;
+  margin: 60px 0 0 150px;
+}
+
+
+
+/*  // ============ Scroll To Top ============ //  */
+
+.top-to-btm{
+  position: relative;
+}
+.icon-position{
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style{
+  background-color: #565acf;
+  border: 2px solid #565acf;
+  border-radius: 8px;
+  height: 45px;
+  width: 45px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+}
+.icon-style:hover{
+  animation: none;
+  background: #fff;
+  color: #565acf;
+  border: 2px solid #565acf;
+}
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+/* ================ MEDIA QUERIES ( SMALL DEVICES ) ================ */
+@media screen and (max-width : 768px) {
+
+.header__left h5{
+  background-image: url(../../assests/background-title.png);
+  width: 75%;
+  height: 20px;
+  font-size: 13px;
+  margin-top: -160px;
+}
+
+.header__left h1 {
+  font-weight: 900;
+  font-size: 24px;
+  max-width: 100%;
+}
+
+.header__left button {
+  width: 140px;
+  height: 45px;
+  font-size: 14px;
+
+}
+
+.header__right img {
+  width: 350px;
+  border-style: none;
+  height: auto;
+  vertical-align: middle;
+  margin-right: -30px;
+  margin-top: 170px;
+}
+
+.square, .circle, .plus__image { 
+  display: none;
+}
+
+}

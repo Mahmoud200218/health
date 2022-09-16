@@ -1,0 +1,305 @@
+.about {
+    width: 100%;
+    height: 130vh;
+    background-color: #f7f7ff;
+}
+
+.about__content {
+    position: relative;
+    width: 90%;
+    height: 120vh;
+    margin: auto;
+    display: flex;
+}
+
+.about__left {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 50%;
+}
+
+
+.exper1 {
+    border-radius: 0 60px 60px;
+    margin-top: 150px;
+    margin-left: auto;
+    padding: 50px 25px 0 0;
+
+}
+.exper2 {
+    border-radius: 60px 0 60px 60px;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.exper3 {
+    border-radius: 60px 60px 60px 0;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding:25px 30px 0 0;
+}
+
+.years {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background-color: #E6E7FF;
+    border-radius: 60px 60px 0 60px;
+    text-align: center;
+    color: #565acf;
+    margin: 25px 0 0 0;
+}
+
+.years-border {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 2px solid #565ACF;
+    border-radius: 60px 60px 0 60px;
+    margin: 10px 0 0 10px;
+}
+
+.years-border h1 {
+    font-size: 120px;
+    font-weight: 900;
+}
+
+.years-border p {
+    color: #323585;
+    font-size: 18px;
+    margin-top: -40px;
+    font-weight: 800;
+}
+
+ /* About Right */
+.about__right {
+    position: absolute;
+    max-width: 42%;
+    right: 0;
+    top: 27%;
+}
+
+.about__right h6 {
+    color: var(--orange-color);
+    background-image: url(../../assests//background-title.png);
+    width: 100px;
+    height: 23px;
+    text-align: center;
+}
+
+.about__right h1 {
+    color: var(--main-color);
+}
+
+/* boxes */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 60px;
+}
+
+.box1 {
+    position: relative;
+    border: 1.2px solid #B2F0FB;
+    max-width: 100%;
+    padding-top: 12px ;
+    text-align: center;
+    border-radius: 0.4rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+    display: grid;
+    margin: 15px;
+}
+
+.box1 p {
+    padding: 0px 0px 0 50px;
+}
+
+
+.squares {
+    position: absolute;
+    margin: -120px 40px 0 0;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border: 2px solid var(--btn-color);
+    animation: load 60s linear infinite; 
+    right: 0; 
+    top: 0;
+  }
+  
+  .square-child {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background-color: #E6E7FF;
+  
+  }
+  
+
+  @keyframes load {
+    /*calc(360deg * 3) doesn´t work :)*/
+    to { transform: rotate(3turn); }
+  }
+
+.icon__box1 {
+    position: absolute;
+    color: var(--main-color) ;
+    font-size: 34px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-280%,-50%);
+    z-index: 2;
+}
+
+.box1::before {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 100%;
+    left: 0;
+    top: -0.2px;
+    background-color: #B2F0FB ;
+    border-radius:  0 2rem 2rem 0;
+}
+
+/* Box Colors */
+.bx2 {
+    border: 1.2px solid #A4FCC4;
+}
+
+.bx2::before {
+    content: "";
+    background-color: #A4FCC4;
+}
+
+
+.bx3 {
+    border: 1.2px solid #FFBDBC;
+}
+
+.bx3::before {
+    content: "";
+    background-color: #FFBDBC;
+}
+
+
+.bx4 {
+    border: 1.2px solid #FFC107;
+}
+
+.bx4::before {
+    content: "";
+    background-color: #FFC107;
+}
+
+.box1:hover{
+	animation: pop .3s 2;}
+
+@keyframes pop {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.about__right button {
+  background-color: #565acf;
+  color: #fff;
+  border: 0;
+  padding: 8px 20px;
+  height: 48px;
+  width: 150px;
+  border-radius: 0.5rem;
+  margin: 20px 0 0 16px;
+  transition: 0.5s;
+}
+
+.about__right button:hover {
+  background-color:#323585;
+}
+
+
+
+/* ================ MEDIA QUERIES ( SMALL DEVICES ) ================ */
+@media screen and (max-width : 768px) {
+  
+    
+.about__right {
+    margin-top: -290px;
+}
+
+.exper1 {
+    border-radius: 0 30px 40px 30px;
+    margin-top: -10px;
+    width: 180px;
+    margin-left: -10px;
+
+}
+.exper2 {
+    border-radius: 30px 0 30px 30px;
+    margin-top: 0px;
+    width: 190px;
+    margin-left: -15px;
+}
+
+.exper3 {
+    border-radius: 50px 50px 50px 0;
+    width: 180px;
+    margin-left: -10px;
+    margin-top: -320px;
+}
+
+.years {
+    width: 180px;
+    height: 180px;
+    border-radius: 60px 60px 0 60px;
+    margin: -300px 0 0 -20px;
+
+
+}
+
+.years-border {
+    width: 180px;
+    height: 180px;
+    border-radius: 60px 60px 0 60px;
+}
+
+.years-border h1 {
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+ /* About Right */
+ .about {
+    height: 245vh;
+}
+ .about__right {
+    max-width: 100%;
+    left: 0;
+    top: 90%;
+}
+
+.squares {
+    display: none;
+}
+
+
+/* boxes */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 40px;
+}
+.icon__box1{
+    margin-left: -50px;
+}
+
+}
+
